@@ -36,7 +36,7 @@ cd degree-conversion-tool
 Add Dependencies:
 This project uses the approx crate for testing. Ensure your Cargo.toml includes:
 
-``` Ini, TOML
+``` Ini
 [dev-dependencies]
 approx = "0.5.1"
 ```
