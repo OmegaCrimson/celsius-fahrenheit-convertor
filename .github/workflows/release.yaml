@@ -53,10 +53,12 @@ jobs:
     steps:
       - name: Download all artifacts
         uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            **/celsius-fahrenheit-convertor-*
+            celsius-fahrenheit-convertor-*
           generate_release_notes: true
